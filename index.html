@@ -12,10 +12,46 @@
     <title>Income & expanse calculator</title>
 </head>
 <body>
-    <h3>Hello</h3>
+  
+    <h2>Income & expanse calculator</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-sm-12">
+                <img src="./imges/money.jpg" alt="">
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="income">
+                    <h3>Income:</h3>
+                    <label for="income">Income :</label>
+                    <input  class="form-control" type="number" id="income">
+                </div>
+                <div class="expenses">
+                    <h3>Expenses</h3>
+                     <label for="expanses">Food</label>
+                     <input  class="form-control" type="number"id="food">
+                     <label  for="rent">Rent</label>
+                     <input class="form-control" type="number"id="rent">
+                     <label for="clothes">Clothes :</label>
+                     <input  class="form-control" type="number"id="clothes">
+                </div>
+                <!-- Calculate ammount button -->
+                <button class="btn btn-primary"id="totalCalBtn">Calculate</button>
+                <!-- total expanses and blance calculate -->
+                <h3>Total Expenses:<span id="totalExpense">00</span></h3>
+                <h3>Balance:<span id="balance">00</span></h3>
+                <!-- ammount saving -->
+                <div class="ammount-save">
+                    <label for="save">Save:</label>
+                    <input type="number" name="" id="save">
+                    <button id="saveBtn">Save</button>
+                </div>
+                <!-- display saving ammount -->
+                <h3>Saving Ammount:<span id="saveammount">00</span></h3>
+                <h3>Remaining Balance :<span id="remainingBalance">00</span></h3>
+            </div>
+        </div>
+    </div>
 
-
-    <p>rasel</p>
     <!-- Custome js file -->
     <script src="./js/app.js"></script>
 </body>
