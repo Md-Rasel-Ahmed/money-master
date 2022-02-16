@@ -38,7 +38,7 @@ calculateBtn.addEventListener("click", function () {
 saveBtn.addEventListener("click", function () {
   let totalSaveAmmount = (incomes() * saves()) / 100;
   // checking validation for save
-  if (save.value < 0 || save.value == "") {
+  if (save.value <= 0 || save.value == "") {
     alert("Please provide the valid number");
     return;
   }
@@ -53,6 +53,7 @@ saveBtn.addEventListener("click", function () {
   saveammount.innerText = totalSaveAmmount;
   remainingAmmount.innerText =
     parseInt(balance.textContent) - parseInt(saveammount.innerText);
+  save.valu = "";
 });
 // total income calculator
 function incomes() {

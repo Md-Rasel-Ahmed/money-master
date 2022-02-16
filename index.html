@@ -13,7 +13,7 @@
 </head>
 <body>
   
-    <h2 align="center" class="p-3 text-primary">Income & Expenses calculator</h2>
+    <h2 align="center" class="p-3 text-primary">Incomes & Expenses calculator</h2>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-sm-12">
@@ -21,29 +21,29 @@
             </div>
             <div class="col-lg-4 col-sm-12">
                 <div class="income">
-                    <h3>Income:</h3>
-                    <label for="income">Income :</label>
-                    <input  class="form-control" type="number" id="income">
+                    <h3 class="text-center text-primary">Income:</h3>
+                    <label for="income">Income</label>
+                    <input  class="form-control" type="number" id="income" placeholder="Enter your income">
                 </div>
                 <div class="expenses">
-                    <h3>Expenses</h3>
+                    <h3 class="text-center text-primary mt-2">Expenses</h3>
                      <label for="expanses">Food</label>
-                     <input  class="form-control" type="number"id="food">
+                     <input  class="form-control" type="number"id="food" placeholder="Enter your food amount">
                      <label  for="rent">Rent</label>
-                     <input class="form-control" type="number"id="rent">
-                     <label for="clothes">Clothes :</label>
-                     <input  class="form-control" type="number"id="clothes">
+                     <input class="form-control" type="number"id="rent" placeholder="Enter your room rent amount">
+                     <label for="clothes">Clothes</label>
+                     <input  class="form-control" type="number"id="clothes" placeholder="Enter your clothes amount">
                 </div>
                 <!-- Calculate ammount button -->
-                <button class="btn btn-primary mt-3"id="totalCalBtn">Calculate</button>
+                <button class="btn btn-primary mt-3 px-5"id="totalCalBtn">Calculate</button>
                 <!-- total expanses and blance calculate -->
                 <h3>Total Expenses:<span id="totalExpense">00</span></h3>
                 <h3>Balance:<span id="balance">00</span></h3>
                 <!-- ammount saving -->
                 <div class="ammount-save">
-                    <label for="save">Save:</label>
+                    <label for="save">Save Account</label>
                     <input  class="form-control"type="number" name="" id="save" placeholder="%">
-                    <button class="btn btn-primary mt-3" id="saveBtn">Save</button>
+                    <button class="btn btn-primary mt-3 px-5" id="saveBtn">Save</button>
                 </div>
                 <h3>Saving Ammount:<span id="saveammount">00</span></h3>
                 <h3>Remaining Balance :<span id="remainingBalance">00</span></h3>
