@@ -30,10 +30,9 @@ calculateBtn.addEventListener("click", function () {
     alert("Your expenses are more than your income!");
     return;
   }
-  //   checking validation end
+  // End checking validation for calculate button
   totalExpense.innerText = expenses();
   balance.innerText = incomes() - expenses();
-  // income.value = "";
   food.value = "";
   rent.value = "";
   clothes.value = "";
@@ -57,7 +56,7 @@ saveBtn.addEventListener("click", function () {
     save.classList.remove("saveError");
     document.querySelector("small").style.display = "none";
   }
-  //   checking validation for save button end
+  //  End checking validation for save button
   saveammount.innerText = parseInt(totalSaveAmmount);
   remainingAmmount.innerText =
     parseInt(balance.textContent) - parseInt(saveammount.innerText);
