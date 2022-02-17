@@ -7,9 +7,25 @@
     <!--Bootstrap cdn link  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- font awesome cdn link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom css link -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Income & Expenses calculator</title>
+    <style>
+        body{
+            background-color: #ddd;
+        }
+        .saveError{
+            border:1px solid red;
+        }
+        small{
+            color:red;
+            display: none;
+        }
+    </style>
 </head>
 <body>
   
@@ -27,26 +43,27 @@
                 </div>
                 <div class="expenses">
                     <h3 class="text-center text-primary mt-2">Expenses</h3>
-                     <label for="expanses">Food</label>
+                     <label class="mt-3" for="expanses">Food</label>
                      <input  class="form-control" type="number"id="food" placeholder="Enter your food amount">
-                     <label  for="rent">Rent</label>
+                     <label class="mt-3"  for="rent">Rent</label>
                      <input class="form-control" type="number"id="rent" placeholder="Enter your room rent amount">
-                     <label for="clothes">Clothes</label>
+                     <label class="mt-3" for="clothes">Clothes</label>
                      <input  class="form-control" type="number"id="clothes" placeholder="Enter your clothes amount">
                 </div>
                 <!-- Calculate ammount button -->
                 <button class="btn btn-primary mt-3 px-5"id="totalCalBtn">Calculate</button>
                 <!-- total expanses and blance calculate -->
-                <h3>Total Expenses:<span id="totalExpense">00</span></h3>
-                <h3>Balance:<span id="balance">00</span></h3>
+                <h3 class="text-center py-2">Total Expenses:<span id="totalExpense">00</span></h3>
+                <h3 class="text-center">Balance:<span id="balance">00</span></h3>
                 <!-- ammount saving -->
                 <div class="ammount-save">
-                    <label for="save">Save Account</label>
-                    <input  class="form-control"type="number" name="" id="save" placeholder="%">
+                    <label for="save">Save Amount</label>
+                    <input  class="form-control "type="number" name="" id="save" placeholder="%">
+                    <small><i class="fas fa-exclamation-triangle"></i> Your saved money is more than your balance</small>
                     <button class="btn btn-primary mt-3 px-5" id="saveBtn">Save</button>
                 </div>
-                <h3>Saving Ammount:<span id="saveammount">00</span></h3>
-                <h3>Remaining Balance :<span id="remainingBalance">00</span></h3>
+                <h3 class="text-center py-2">Saving Ammount:<span id="saveammount">00</span></h3>
+                <h3 class="text-center py-2">Remaining Balance :<span id="remainingBalance">00</span></h3>
             </div>
         </div>
     </div>

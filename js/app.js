@@ -46,8 +46,12 @@ saveBtn.addEventListener("click", function () {
     totalSaveAmmount > parseInt(balance.textContent) ||
     isNaN(totalSaveAmmount)
   ) {
-    alert("Your saved money is more than your balance");
+    save.classList.add("saveError");
+    document.querySelector("small").style.display = "block";
     return;
+  } else {
+    save.classList.remove("saveError");
+    document.querySelector("small").style.display = "none";
   }
   //   checking validation for save button end
   saveammount.innerText = totalSaveAmmount;
