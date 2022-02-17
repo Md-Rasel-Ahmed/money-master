@@ -33,6 +33,10 @@ calculateBtn.addEventListener("click", function () {
   //   checking validation end
   totalExpense.innerText = expenses();
   balance.innerText = incomes() - expenses();
+  // income.value = "";
+  food.value = "";
+  rent.value = "";
+  clothes.value = "";
 });
 // save button click
 saveBtn.addEventListener("click", function () {
@@ -54,10 +58,10 @@ saveBtn.addEventListener("click", function () {
     document.querySelector("small").style.display = "none";
   }
   //   checking validation for save button end
-  saveammount.innerText = totalSaveAmmount;
+  saveammount.innerText = parseInt(totalSaveAmmount);
   remainingAmmount.innerText =
     parseInt(balance.textContent) - parseInt(saveammount.innerText);
-  save.valu = "";
+  save.value = "";
 });
 // total income calculator
 function incomes() {
